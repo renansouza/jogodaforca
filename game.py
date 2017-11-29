@@ -21,3 +21,5 @@ player = input("Por favor, informe seu nome: \n")
 gravanome = open("players/"+player+".txt", "a")
 
 theme = input("Escolha entre os temas seguintes: 1 - Computação 2- Matemática: \n")
+
+teste = "hello"

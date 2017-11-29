@@ -1,0 +1,2 @@
+Sistema operacional de código aberto:
+Linux

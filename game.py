@@ -9,6 +9,9 @@
 # Passo 4 - Contar a quantidade de tentativas do jogador e armazenar em um arquivo
 # Passo 5 - Salvar as palavras que o jogador acertou em seu arquivo
 
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 print ("#"*100)
 print(" "*35, "BEM VINDO AO JOGO DA FORCA", " "*35)
 print("#"*100)
@@ -20,5 +23,12 @@ player = input("Por favor, informe seu nome: \n")
 
 gravanome = open("players/"+player+".txt", "a")
 
-theme = input("Escolha entre os temas seguintes: 1 - Computação 2- Matemática: \n")
+# Solicita qual o tema o jogador prefere
+
+theme = input("Escolha entre os temas seguintes:\n1 - Computação 2- Futebol: \n")
+
+if theme == '1':
+    escolha = open("temas/computacao.txt", "r")
+    pergunta = input(escolha.readlines())
+
 

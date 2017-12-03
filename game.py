@@ -9,7 +9,7 @@
 # Passo 4 - Contar a quantidade de tentativas do jogador e armazenar em um arquivo
 # Passo 5 - Salvar as palavras que o jogador acertou em seu arquivo
 
-#!/usr/bin/python
+#!/usr/bin-/python
 # -*- coding: utf-8 -*-
 
 print ("#"*100)
@@ -18,17 +18,8 @@ print("#"*100)
 
 # Solicita o nome do jogador, e armazena em um arquivo
 
-print("\n")
-player = input("Por favor, informe seu nome: \n")
 
-gravanome = open("players/"+player+".txt", "a")
 
-# Solicita qual o tema o jogador prefere
 
-theme = input("Escolha entre os temas seguintes:\n1 - Computação 2- Futebol: \n")
-
-if theme == '1':
-    escolha = open("temas/computacao.txt", "r")
-    pergunta = input(escolha.readlines())
 
 

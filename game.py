@@ -12,32 +12,35 @@
 #!/usr/bin-/python
 # -*- coding: utf-8 -*-
 
-print ("#"*100)
-print(" "*35, "BEM VINDO AO JOGO DA FORCA", " "*35)
-print("#"*100)
+def game():
+    print ("#"*100)
+    print(" "*35, "BEM VINDO AO JOGO DA FORCA", " "*35)
+    print("#"*100)
 
 # Solicita o nome do jogador, e armazena em um arquivo
 
-print("Por favor, informe o seu nome: ")
-player = input()
+    print("Por favor, informe o seu nome: ")
+    player = input()
 
-gravanome = open("players/" + player + ".txt", "w", encoding="utf-8")
+    gravanome = open("players/" + player + ".txt", "w", encoding="utf-8")
 
 # Escreve o nome do jogador dentro do arquivo criado
 
-gravanome.write("O nome do jogador é: " + player + "\n\n")
-gravanome.write("-" * 100 + "\n")
+    gravanome.write("O nome do jogador é: " + player + "\n\n")
+    gravanome.write("-" * 100 + "\n")
 
 # Solicita o tema para o jogador e armazena o valor em uma variável
 
-print("Qual o tema você prefere?\n")
-print("1-) Tecnologia 2-) Futebol")
+def tema():
 
-tema = input()
+    print("Qual o tema você prefere?\n")
+    print("1-) Tecnologia 2-) Futebol")
 
-if tema == "1":
-    tecnologia = open("temas/computacao.txt")
-elif tema == "2":
-    futebol = open("temas/futebol.txt")
+    tema = input()
+
+    if tema == "1":
+        tecnologia = open("temas/computacao.txt")
+    elif tema == "2":
+        futebol = open("temas/futebol.txt")
 
 

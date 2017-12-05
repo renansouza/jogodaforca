@@ -26,8 +26,18 @@ gravanome = open("players/" + player + ".txt", "w", encoding="utf-8")
 # Escreve o nome do jogador dentro do arquivo criado
 
 gravanome.write("O nome do jogador é: " + player + "\n\n")
-gravanome.write("-"*100)
+gravanome.write("-" * 100 + "\n")
 
+# Solicita o tema para o jogador e armazena o valor em uma variável
 
+print("Qual o tema você prefere?\n")
+print("1-) Tecnologia 2-) Futebol")
+
+tema = input()
+
+if tema == "1":
+    tecnologia = open("temas/computacao.txt")
+elif tema == "2":
+    futebol = open("temas/futebol.txt")
 
 

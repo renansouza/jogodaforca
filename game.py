@@ -18,7 +18,15 @@ print("#"*100)
 
 # Solicita o nome do jogador, e armazena em um arquivo
 
+print("Por favor, informe o seu nome: ")
+player = input()
 
+gravanome = open("players/" + player + ".txt", "w", encoding="utf-8")
+
+# Escreve o nome do jogador dentro do arquivo criado
+
+gravanome.write("O nome do jogador é: " + player + "\n\n")
+gravanome.write("-"*100)
 
 
 

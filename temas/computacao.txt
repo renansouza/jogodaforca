@@ -1,2 +1,4 @@
 Sistema operacional de código aberto:
-Linux
+linux
+Principal dispositivo de entrada do computador:
+teclado

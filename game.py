@@ -48,8 +48,6 @@ def game():
     player()
     theme()
 
-# game
-
 if __name__ == '__main__':
     game()
 

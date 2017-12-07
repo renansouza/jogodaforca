@@ -1,6 +1,3 @@
-Sistema operacional de código aberto:
-Linux
-
 Primeiro computador digital eletronico
 Eniac
 
@@ -60,3 +57,4 @@ html
 
 Um dos fundadores da empresa da apple
 Steve Jobs
+

@@ -9,26 +9,38 @@
 # Passo 4 - Contar a quantidade de tentativas do jogador e armazenar em um arquivo
 # Passo 5 - Salvar as palavras que o jogador acertou em seu arquivo
 
-#!/usr/bin/python
+#!/usr/bin-/python
 # -*- coding: utf-8 -*-
 
-print ("#"*100)
-print(" "*35, "BEM VINDO AO JOGO DA FORCA", " "*35)
-print("#"*100)
+def game():
+    print ("#"*100)
+    print(" "*35, "BEM VINDO AO JOGO DA FORCA", " "*35)
+    print("#"*100)
 
 # Solicita o nome do jogador, e armazena em um arquivo
 
-print("\n")
-player = input("Por favor, informe seu nome: \n")
+    print("Por favor, informe o seu nome: ")
+    player = input()
 
-gravanome = open("players/"+player+".txt", "a")
+    gravanome = open("players/" + player + ".txt", "w", encoding="utf-8")
 
-# Solicita qual o tema o jogador prefere
+# Escreve o nome do jogador dentro do arquivo criado
 
-theme = input("Escolha entre os temas seguintes:\n1 - Computação 2- Futebol: \n")
+    gravanome.write("O nome do jogador é: " + player + "\n\n")
+    gravanome.write("-" * 100 + "\n")
 
-if theme == '1':
-    escolha = open("temas/computacao.txt", "r")
-    pergunta = input(escolha.readlines())
+# Solicita o tema para o jogador e armazena o valor em uma variável
+
+def tema():
+
+    print("Qual o tema você prefere?\n")
+    print("1-) Tecnologia 2-) Futebol")
+
+    tema = input()
+
+    if tema == "1":
+        tecnologia = open("temas/computacao.txt")
+    elif tema == "2":
+        futebol = open("temas/futebol.txt")
 
 

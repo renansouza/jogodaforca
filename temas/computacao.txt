@@ -1,3 +1,4 @@
+
 Primeiro computador digital eletronico
 Eniac
 
@@ -55,6 +56,4 @@ processador de computador
 serve para produzir paginas web
 html
 
-Um dos fundadores da empresa da apple
-Steve Jobs
 

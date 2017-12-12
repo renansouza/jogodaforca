@@ -69,5 +69,7 @@ def game():
 
     theme(player())
 
+# Chama game
+
 if __name__ == '__main__':
     game()

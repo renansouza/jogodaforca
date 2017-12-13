@@ -58,11 +58,10 @@ def theme(player):
             busca.append(str(perguntas[e])[:-1])
 
         pergunta = list(random.choice((busca)))
-        print(pergunta)
 
-        for letra in pergunta:
-            resposta.append(pergunta[letra])[:-1])
-            print("#")
+        for letra in range(0, len(pergunta), 1):
+            subs = "#"
+            print(subs.strip("\n"))
 
     elif tema == "2":
 

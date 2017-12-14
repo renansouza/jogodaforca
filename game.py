@@ -18,8 +18,7 @@ import random
 
 def player():
 
-    print("Por favor, informe o seu nome: ")
-    player = input()
+    player = input("Por favor, informe o seu nome:\n")
 
 # Escreve o nome do jogador dentro do arquivo criado
 
@@ -33,22 +32,18 @@ def player():
 
 def theme(player):
 
-    print("Qual o tema você prefere?\n")
-    print("1-) Tecnologia 2-) Futebol")
 
-    tema = input()
+    tema = input("Qual o tema você prefere?\n "
+                 "1-) Tecnologia 2-) Futebol\n")
 
     if tema == "1":
 
         tecnologia = open("temas/computacao.txt", encoding="utf-8")
         gravanome = open("players/" + player + ".txt", "a", encoding="utf-8")
 
-        gravanome.write("\n")
-        gravanome.write("O tema escolhido é tecnologia ")
-        gravanome.write("\n")
+        gravanome.write("\nO tema escolhido é tecnologia\n")
 
-        perguntas = []
-        busca = []
+        busca = [] ## guarda as perguntas de computação
         tentativas = 0
         resposta = []
 
@@ -57,11 +52,24 @@ def theme(player):
         for e in range(0, len(perguntas), 2):
             busca.append(str(perguntas[e])[:-1])
 
+        # ajuste para a 1ª posição
+        busca[0] = busca[0][1:]
         pergunta = list(random.choice((busca)))
+        pergunta = (''.join(pergunta)).strip()
+        print(pergunta, end="\t")
 
-        for letra in range(0, len(pergunta), 1):
-            subs = "#"
-            print(subs.strip("\n"))
+        for i, v in enumerate(perguntas):
+            if str(v).strip() == pergunta:
+                resposta = perguntas[i+1][:-1]
+
+                for l in range(len(resposta)):
+                    print('#', sep='', end="")
+                # cont = 0
+                # while cont <= len(resposta):
+                #     teste = input()
+
+
+
 
     elif tema == "2":
 
